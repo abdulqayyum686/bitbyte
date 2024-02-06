@@ -2,6 +2,8 @@ import React from "react";
 import { headersArray } from "@/utils/headerArray";
 import { useRouter } from "next/router";
 import { useDeleteUserAccount, useUser } from "@/utils/hooks";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 const Header = () => {
   const router = useRouter();
